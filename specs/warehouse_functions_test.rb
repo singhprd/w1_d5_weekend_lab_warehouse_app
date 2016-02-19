@@ -1,7 +1,7 @@
 require( 'minitest/autorun' )
-require_relative('../warehouse_functions.rb')
+require_relative( '../warehouse_functions.rb' )
 
-class TestWareHouse < MiniTest::Test
+class TestWarehouse < MiniTest::Test
 
   def setup
 
@@ -20,10 +20,20 @@ class TestWareHouse < MiniTest::Test
 }
   end
 
-def test_return_bay_item
-  actual_return = return_bay_item( "a1", @warehouse_product_information_hash )
-  expected_return = "needle"
-  assert_equal(expected_return, actual_return)
-end
+  def test_return_bay_item
+    actual_return = return_bay_item( "a3", @warehouse_product_information_hash )
+    expected_return = "blouse"
+    assert_equal(expected_return, actual_return)
+  end
 
 end
+
+
+
+
+
+
+
+
+
+

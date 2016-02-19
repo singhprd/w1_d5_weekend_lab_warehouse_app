@@ -16,8 +16,6 @@ warehouse_product_information_hash = {
 
 }
 
-array_of_symbols = [:a1, :a2, :a3]
-
 
 # 1)
 #   Given a bay, returns the item in that bay
@@ -28,8 +26,6 @@ array_of_symbols = [:a1, :a2, :a3]
 # user_input = gets.chomp
 
 # return_bay_item(user_input, warehouse_product_information_hash)
-
-    puts input_hash.key?(user_input_sym)
 
 
 
