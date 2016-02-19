@@ -20,8 +20,8 @@ class TestWarehouse < MiniTest::Test
 }
   end
 
-  def test_return_bay_item
-    actual_return = return_bay_item( "a3", @warehouse_product_information_hash )
+  def test_return_item_from_bay
+    actual_return = return_item_from_bay( "a3", @warehouse_product_information_hash )
     expected_return = "blouse"
     assert_equal(expected_return, actual_return)
   end
