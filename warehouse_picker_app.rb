@@ -21,15 +21,24 @@ product_info_hash  = {
 #   - given "b5", should return 'nail filer'
 
 puts 'What bay would you like information on? [expects rack and number eg. b5]'
-user_input = gets.chomp
+user_input_1 = gets.chomp
 
-puts "#{user_input}: #{return_item_from_bay(user_input, product_info_hash )} "
+puts "#{user_input_1}: #{return_item_from_bay( user_input_1, product_info_hash )} "
 
 # 2)
 #   Given an item return the bay that it is in.
 #   - given "nail filer" should return "b5"
 
 puts "Input item to return it's bay:"
+user_input_2 = gets.chomp
+
+puts "#{user_input_2}: #{return_bay_from_item( user_input_2, product_info_hash )}"
+
+  # 3) Given a list of bays, list the items in those bays
+  # - given "b5, b10, and b6", determine that the products are "nail filer, cookie jar, and tooth paste", and they're five bays apart
+
+
+
 
 
 

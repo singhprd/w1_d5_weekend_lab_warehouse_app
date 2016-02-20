@@ -26,6 +26,21 @@ class TestWarehouse < MiniTest::Test
     assert_equal(expected_return, actual_return)
   end
 
+  def test_return_bay_from_item
+    actual_return = return_bay_from_item("blouse", @warehouse_product_information_hash)
+    expected_return = "a3"
+    assert_equal(expected_return, actual_return)
+  end
+
+  # Given a list of bays, list the items in those bays
+  # # - given "b5, b10, and b6", determine that the products are "nail filer, cookie jar, and tooth paste", and they're five bays apart
+
+  def test_return_list_items_from_bay
+    actual_return = return_list_items_from_bay( [ 'nail filer', 'cookie jar', 'tooth paste'], @warehouse_product_information_hash )
+    expected_return = [ 'nail filer', 'cookie jar', 'tooth paste' ]
+    assert_equal( expected_return, actual_return )
+  end
+
 end
 
 
