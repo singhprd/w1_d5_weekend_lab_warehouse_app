@@ -19,6 +19,6 @@ def return_bay_from_item(user_input_raw, input_hash)
     end
 end
 
-def return_list_items_from_bay( user_input_raw, input_hash)
+def return_list_items_from_bays( user_input_raw, input_hash)
   return ['batman', 'batman']
 end
