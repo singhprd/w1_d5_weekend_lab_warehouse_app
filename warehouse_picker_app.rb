@@ -12,16 +12,7 @@ product_info_hash  = {
   a8:  'model car'      ,
   a9:  'glow stick'     ,
   a10: 'rubber band'    ,
-  b1:  'tyre swing'     ,
-  b2:  'sharpie'        ,
-  b3:  'picture frame'  ,
-  b4:  'photo album'    ,
-  b5:  'nail filer'     ,
-  b6:  'tooth paste'    ,
-  b7:  'bath fizzers'   ,
-  b8:  'tissue box'     ,
-  b9:  'deodorant'      ,
-  b10: 'cookie jar'     ,
+  
   c1:  'rusty nail'     ,
   c2:  'drill press'    ,
   c3:  'chalk'          ,
@@ -31,7 +22,18 @@ product_info_hash  = {
   c7:  'paint brush'    ,
   c8:  'candy wrapper'  ,
   c9:  'shoe lace'      ,
-  c10: 'leg warmers'    
+  c10: 'leg warmers'    ,
+
+  b1:  'tyre swing'     ,
+  b2:  'sharpie'        ,
+  b3:  'picture frame'  ,
+  b4:  'photo album'    ,
+  b5:  'nail filer'     ,
+  b6:  'tooth paste'    ,
+  b7:  'bath fizzers'   ,
+  b8:  'tissue box'     ,
+  b9:  'deodorant'      ,
+  b10: 'cookie jar'     
 }
 
 # 1)
@@ -68,10 +70,13 @@ user_input_raw = 'nil'
     user_input_raw = gets.chomp
     user_input_array << user_input_raw 
   end
-
-user_input_array.pop  
+user_input_array.pop 
 
 puts return_list_items_from_bays( user_input_array, product_info_hash )
+
+# returns the difference between items
+puts "The difference between items is #{return_difference_between_bays( user_input_array, product_info_hash )}"
+
 
 
 
