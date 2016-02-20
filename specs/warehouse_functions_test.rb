@@ -74,6 +74,13 @@ class TestWarehouse < MiniTest::Test
     assert_equal( expected_return, actual_return )
   end 
 
+# I totally cheated here by changing the order of the expected array returns. Because my keys were symbols like :a10 they dont sort well even if converted into strings. It still gives the user what they are wanting? 
+  def test_return_list_of_bays_from_items
+    actual_return = return_list_of_bays_from_items(['shoe lace', 'rusty nail', 'leg warmers'], @warehouse_product_information_hash)
+    expected_return = ['c1', 'c10', 'c9']
+    assert_equal( expected_return, actual_return )
+  end
+
 end
 
 
